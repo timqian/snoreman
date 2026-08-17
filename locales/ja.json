@@ -77,6 +77,19 @@
     "unknown": "不明",
     "pending": "解析待ち"
   },
+  "trend": {
+    "title": "推移",
+    "week": "1週間",
+    "month": "1ヶ月",
+    "avgSnoreTime": "平均いびき %{time}",
+    "nightsRecorded": "%{count}夜",
+    "nightsRecordedOne": "1夜",
+    "emptyPeriod": "この期間の録音はありません",
+    "sparseHint": "あと数夜録音すると傾向が見えます",
+    "gapA11y": "%{date}、録音なし",
+    "pendingA11y": "%{date}、解析待ち",
+    "barA11y": "%{date}、いびき %{time}、%{count}回"
+  },
   "settings": {
     "title": "設定",
     "language": "言語",

@@ -77,6 +77,19 @@
     "unknown": "알 수 없음",
     "pending": "분석 대기"
   },
+  "trend": {
+    "title": "추이",
+    "week": "1주",
+    "month": "1개월",
+    "avgSnoreTime": "평균 코골이 %{time}",
+    "nightsRecorded": "%{count}일",
+    "nightsRecordedOne": "1일",
+    "emptyPeriod": "이 기간의 녹음이 없습니다",
+    "sparseHint": "며칠 더 녹음하면 추이가 보여요",
+    "gapA11y": "%{date}, 녹음 없음",
+    "pendingA11y": "%{date}, 분석 대기",
+    "barA11y": "%{date}, 코골이 %{time}, %{count}회"
+  },
   "settings": {
     "title": "설정",
     "language": "언어",
