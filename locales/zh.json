@@ -77,6 +77,19 @@
     "unknown": "未知",
     "pending": "待分析"
   },
+  "trend": {
+    "title": "趋势",
+    "week": "一周",
+    "month": "一月",
+    "avgSnoreTime": "平均呼噜 %{time}",
+    "nightsRecorded": "%{count} 晚",
+    "nightsRecordedOne": "1 晚",
+    "emptyPeriod": "这段时间还没有录音",
+    "sparseHint": "再录几晚就能看出趋势",
+    "gapA11y": "%{date}，未录音",
+    "pendingA11y": "%{date}，待分析",
+    "barA11y": "%{date}，打呼噜 %{time}，%{count} 次"
+  },
   "settings": {
     "title": "设置",
     "language": "语言",

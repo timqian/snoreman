@@ -77,6 +77,19 @@
     "unknown": "Unknown",
     "pending": "Pending"
   },
+  "trend": {
+    "title": "Trend",
+    "week": "Week",
+    "month": "Month",
+    "avgSnoreTime": "%{time} snore time avg",
+    "nightsRecorded": "%{count} nights",
+    "nightsRecordedOne": "1 night",
+    "emptyPeriod": "No recordings in this period",
+    "sparseHint": "A few more nights will make the trend clearer",
+    "gapA11y": "%{date}, no recording",
+    "pendingA11y": "%{date}, pending analysis",
+    "barA11y": "%{date}, %{time} snoring, %{count} snores"
+  },
   "settings": {
     "title": "Settings",
     "language": "Language",
