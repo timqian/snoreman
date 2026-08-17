@@ -36,6 +36,7 @@ import {
 } from '@/utils/storage';
 import { analyzeSnoringAuto } from '@/utils/snore-detection';
 import { getSeverityColor } from '@/utils/severity';
+import { SnoreTrendChart } from '@/components/snore-trend-chart';
 
 export default function HomeScreen() {
   const [recordings, setRecordings] = useState<RecordingMeta[]>([]);
@@ -199,6 +200,14 @@ export default function HomeScreen() {
     await loadRecordings();
   };
 
+  const handleNightPress = useCallback((recordingId: string) => {
+    if (isRecording) {
+      Alert.alert(i18n.t('home.recordingInProgress'), i18n.t('home.viewDetailsHint'));
+      return;
+    }
+    router.push(`/recording/${recordingId}` as any);
+  }, [isRecording, router]);
+
   // 渲染滑动删除按钮
   const renderRightActions = (
     progress: Animated.AnimatedInterpolation<number>,
@@ -338,6 +347,11 @@ export default function HomeScreen() {
         keyExtractor={(item) => item.id}
         style={isRecording && styles.listDimmed}
         contentContainerStyle={styles.listContent}
+        ListHeaderComponent={
+          recordings.length > 0 ? (
+            <SnoreTrendChart recordings={recordings} onNightPress={handleNightPress} />
+          ) : null
+        }
         ListEmptyComponent={
           <View style={styles.emptyContainer}>
             <View style={[styles.emptyIcon, { backgroundColor: colors.brandSoft }]}>
